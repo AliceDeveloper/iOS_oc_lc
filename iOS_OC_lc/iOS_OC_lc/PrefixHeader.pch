@@ -1,0 +1,84 @@
+//
+//  PrefixHeader.pch
+//  iOS_OC_lc
+//
+//  Created by lichun on 2020/6/16.
+//  Copyright © 2020 lc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark - Core
+#import "NetworkEngine.h"
+#pragma mark - Toolkit
+#import "NSDate+LC.h"
+#import "NSString+LC.h"
+#import "UIImage+LC.h"
+#import "UIPasteboard+LC.h"
+#import "UIView+LC.h"
+#import "ButtonGradientColor.h"
+#import "ButtonUnderLine.h"
+#import "Hardware.h"
+#import "ImageCodeView.h"
+#import "JsonHelper.h"
+#import "Location.h"
+#import "SingleImage.h"
+#import "SingleVideo.h"
+#import "StarEvaluation.h"
+
+#pragma mark -
+#pragma mark - 宏
+
+// APP 运行的设备模型
+#define APPRUNMODEL     [UIDevice currentDevice].model
+// 设备模型
+#define DEVICEMODEL     [UIDevice currentDevice].localizedModel
+// 操作系统版本号
+#define SYSTEMVERSION   [UIDevice currentDevice].systemVersion
+// APP 唯一标识
+#define APPUUID         [UIDevice currentDevice].identifierForVendor.UUIDString
+// APP 发布版本号
+#define APPVERSION_P    [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]
+// APP 编译版本号
+#define APPVERSION_B    [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleVersion"]
+// APP 工程名称
+#define APPNAME         [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]
+
+// 弱引用
+#define WeakSelf __weak __typeof(self) weakSelf = self
+// 强引用，先弱引用之后才能强引用
+#define StrongSelf __strong __typeof(weakSelf) strongSelf = weakSelf
+
+#ifdef DEBUG
+#define LCLog(fmt,...) NSLog((@"%s[Line %d]" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define LCLog(...)
+#endif
+
+// 获取屏幕尺寸
+#define SCREENSIZE      [[UIScreen mainScreen] bounds].size
+#define SCREENWIDTH     [[UIScreen mainScreen] bounds].size.width
+#define SCREENHEIGHT    [[UIScreen mainScreen] bounds].size.height
+#define STATUSBARHEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
+#define NAVHEIGHT       (44)
+#define TABBARHEIGHT    (49)
+#define BOTTOMHEIGHT    (STATUSBARHEIGHT >= 40 ? 34 : 0)
+
+// 颜色宏
+#define COLORRGB(r, g, b)       [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:1]
+#define COLORRGBA(r, g, b, a)   [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:(a)]
+#define COLORHEX(value)         COLORRGB(((float)((value & 0xFF0000) >> 16)), ((float)((value & 0xFF00) >> 8)), ((float)(value & 0xFF)))
+
+// 图片加载
+#define SMALLIMAGE(name)    [UIImage imageNamed:[NSString stringWithFormat:@"%@", name]]
+#define BIGIMAGE(name, ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:ext]]
+
+/********************  工程颜色  ********************/
+#define COLORCLEAR          [UIColor clearColor]    // 透明
+#define COLORTINT           COLORHEX(0xff0000)      // 主色调
+#define COLORPLACEHOLDER    COLORHEX(0xbfbfbf)      // 占位色
+#define COLORWHITE          COLORHEX(0xffffff)      // 白色
+#define COLORBLACK          COLORHEX(0x000000)      // 黑色
+
+#endif /* PrefixHeader_pch */

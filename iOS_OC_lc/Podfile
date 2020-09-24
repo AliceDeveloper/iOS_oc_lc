@@ -1,0 +1,24 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'iOS_OC_lc' do
+  platform :ios, '13.0'
+  inhibit_all_warnings!
+  
+  pod 'AFNetworking'              # 网络
+  pod 'CocoaAsyncSocket'          # socket通讯
+  # pod 'SDWebImage'                # 在线图片处理
+  # pod 'FMDB'                      # 数据
+  # pod 'MJExtension'               # 字典和模型之间互相转换
+  # pod 'IQKeyboardManager'         # 智能键盘
+  # pod 'Masonry'                   # 自动布局
+  # pod 'ReactiveObjC'              # RAC
+  # pod 'JLRoutes'                  # 路由
+  # pod 'SVProgressHUD'             # 轻量级loading弹窗
+  # pod 'MJRefresh'                 # 刷新
+  # pod 'ActionSheetPicker-3.0'     # 模态框
+  # pod 'TZImagePickerController'   # 图片选择
+  # pod 'DZNEmptyDataSet'           # 空数据页面展示
+  # pod 'JSBadgeView'               # 角标展示
+  # pod 'WechatOpenSDK'             # 微信
+  # pod 'AlipaySDK-iOS'             # 支付宝
+  
+end
