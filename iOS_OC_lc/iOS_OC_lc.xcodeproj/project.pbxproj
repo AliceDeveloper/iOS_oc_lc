@@ -185,6 +185,13 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		DAED73FB251C919E00D1CE5E /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
 		E212BE2E24A9B547003B8D5D /* iOS_OC_lc_qianlong */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +269,7 @@
 				E24839EF2498CBF400C0FAC3 /* Function */,
 				E2A30A7824A32A2E0049993B /* Core */,
 				E24839ED2498CBF400C0FAC3 /* Toolkit */,
-				E24839F12498CBF400C0FAC3 /* Vender */,
+				DAED73FB251C919E00D1CE5E /* Vender */,
 			);
 			path = ProjectClasses;
 			sourceTree = "<group>";
@@ -296,13 +303,6 @@
 				E2D18ED0251C732600D3627A /* QRScanVC.m */,
 			);
 			path = Function;
-			sourceTree = "<group>";
-		};
-		E24839F12498CBF400C0FAC3 /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vender;
 			sourceTree = "<group>";
 		};
 		E24839F22498CC0500C0FAC3 /* Root */ = {
