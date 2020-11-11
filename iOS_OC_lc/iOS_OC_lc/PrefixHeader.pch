@@ -11,6 +11,7 @@
 
 #pragma mark - Core
 #import "NetworkEngine.h"
+#import "SocketEngine.h"
 #pragma mark - Toolkit
 #import "NSDate+LC.h"
 #import "NSString+LC.h"

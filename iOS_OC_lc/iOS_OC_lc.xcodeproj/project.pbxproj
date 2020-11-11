@@ -53,6 +53,8 @@
 		E24839E22498BB1D00C0FAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E24839E12498BB1D00C0FAC3 /* main.m */; };
 		E24839FD2498CCFF00C0FAC3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24839FC2498CCFF00C0FAC3 /* BaseViewController.m */; };
 		E2483A002498CDCC00C0FAC3 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24839FF2498CDCC00C0FAC3 /* BaseNavViewController.m */; };
+		E256BBC22553FD5C004D3D7B /* SocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E256BBC12553FD5C004D3D7B /* SocketEngine.m */; };
+		E256BBC32553FD5C004D3D7B /* SocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E256BBC12553FD5C004D3D7B /* SocketEngine.m */; };
 		E265E12324FF690200ABEC00 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E265E12124FF690200ABEC00 /* BannerView.m */; };
 		E265E12424FF690200ABEC00 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E265E12124FF690200ABEC00 /* BannerView.m */; };
 		E2A30A7F24A32A6D0049993B /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A30A7B24A32A6D0049993B /* NetworkEngine.m */; };
@@ -114,6 +116,8 @@
 		E24839FC2498CCFF00C0FAC3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E24839FE2498CDCC00C0FAC3 /* BaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
 		E24839FF2498CDCC00C0FAC3 /* BaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
+		E256BBC02553FD5C004D3D7B /* SocketEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketEngine.h; sourceTree = "<group>"; };
+		E256BBC12553FD5C004D3D7B /* SocketEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketEngine.m; sourceTree = "<group>"; };
 		E265E12124FF690200ABEC00 /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
 		E265E12224FF690200ABEC00 /* BannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
 		E2A30A7B24A32A6D0049993B /* NetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
@@ -332,6 +336,8 @@
 			children = (
 				E2A30A7D24A32A6D0049993B /* NetworkEngine.h */,
 				E2A30A7B24A32A6D0049993B /* NetworkEngine.m */,
+				E256BBC02553FD5C004D3D7B /* SocketEngine.h */,
+				E256BBC12553FD5C004D3D7B /* SocketEngine.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -467,6 +473,7 @@
 				E212BE0924A9B071003B8D5D /* Hardware.m in Sources */,
 				E212BE0A24A9B071003B8D5D /* BaseViewController.m in Sources */,
 				E2D18E9E251C68E300D3627A /* RootViewController.m in Sources */,
+				E256BBC32553FD5C004D3D7B /* SocketEngine.m in Sources */,
 				E2D18ED2251C732600D3627A /* QRScanVC.m in Sources */,
 				E2BE923B24FE209500DF5DEC /* BaseWebViewController.m in Sources */,
 				E2D18EDE251C73C900D3627A /* QRGenerate.m in Sources */,
@@ -499,6 +506,7 @@
 				E23BF29C249B303400533D46 /* Hardware.m in Sources */,
 				E24839FD2498CCFF00C0FAC3 /* BaseViewController.m in Sources */,
 				E2D18E9D251C68E300D3627A /* RootViewController.m in Sources */,
+				E256BBC22553FD5C004D3D7B /* SocketEngine.m in Sources */,
 				E2D18ED1251C732600D3627A /* QRScanVC.m in Sources */,
 				E2BE923A24FE209500DF5DEC /* BaseWebViewController.m in Sources */,
 				E2D18EDD251C73C900D3627A /* QRGenerate.m in Sources */,

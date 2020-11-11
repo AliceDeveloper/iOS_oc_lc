@@ -123,7 +123,7 @@
                                   @"/etc/apt"];
     for (int i = 0; i < jailBreakPathArr.count; i++) {
         if ([[NSFileManager defaultManager] fileExistsAtPath:jailBreakPathArr[i]]) {
-            NSLog(@"当前设备为越狱设备,可能存在安全隐患!");
+            LCLog(@"当前设备为越狱设备,可能存在安全隐患!");
             return YES;
         }
     }

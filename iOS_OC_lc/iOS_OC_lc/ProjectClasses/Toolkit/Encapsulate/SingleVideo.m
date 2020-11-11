@@ -76,19 +76,19 @@
     
     // 判断是否支持相机
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        NSLog(@"您的设备不支持拍摄功能");
+        LCLog(@"您的设备不支持拍摄功能");
         return;
     }
     // 读取设备授权状态
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
-        NSLog(@"相机权限受限,请在设置中启用");
+        LCLog(@"相机权限受限,请在设置中启用");
         return;
     } else if (authStatus == AVAuthorizationStatusNotDetermined) {
         [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (granted == NO) {
-                    NSLog(@"已拒绝授权，打开相机失败");
+                    LCLog(@"已拒绝授权，打开相机失败");
                 }
             });
         }];
@@ -113,7 +113,7 @@
 - (void)addVideo {
     
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        NSLog(@"您的设备不支持相册功能");
+        LCLog(@"您的设备不支持相册功能");
         return;
     }
     
