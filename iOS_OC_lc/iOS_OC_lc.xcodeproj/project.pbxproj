@@ -53,6 +53,8 @@
 		E24839E22498BB1D00C0FAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E24839E12498BB1D00C0FAC3 /* main.m */; };
 		E24839FD2498CCFF00C0FAC3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24839FC2498CCFF00C0FAC3 /* BaseViewController.m */; };
 		E2483A002498CDCC00C0FAC3 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24839FF2498CDCC00C0FAC3 /* BaseNavViewController.m */; };
+		E2524CFF255E60F400410EE0 /* SocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2524CFE255E60F400410EE0 /* SocketServer.m */; };
+		E2524D00255E60F400410EE0 /* SocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2524CFE255E60F400410EE0 /* SocketServer.m */; };
 		E256BBC22553FD5C004D3D7B /* SocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E256BBC12553FD5C004D3D7B /* SocketEngine.m */; };
 		E256BBC32553FD5C004D3D7B /* SocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E256BBC12553FD5C004D3D7B /* SocketEngine.m */; };
 		E265E12324FF690200ABEC00 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E265E12124FF690200ABEC00 /* BannerView.m */; };
@@ -116,6 +118,8 @@
 		E24839FC2498CCFF00C0FAC3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E24839FE2498CDCC00C0FAC3 /* BaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
 		E24839FF2498CDCC00C0FAC3 /* BaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
+		E2524CFD255E60F400410EE0 /* SocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketServer.h; sourceTree = "<group>"; };
+		E2524CFE255E60F400410EE0 /* SocketServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketServer.m; sourceTree = "<group>"; };
 		E256BBC02553FD5C004D3D7B /* SocketEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketEngine.h; sourceTree = "<group>"; };
 		E256BBC12553FD5C004D3D7B /* SocketEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketEngine.m; sourceTree = "<group>"; };
 		E265E12124FF690200ABEC00 /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
@@ -338,6 +342,8 @@
 				E2A30A7B24A32A6D0049993B /* NetworkEngine.m */,
 				E256BBC02553FD5C004D3D7B /* SocketEngine.h */,
 				E256BBC12553FD5C004D3D7B /* SocketEngine.m */,
+				E2524CFD255E60F400410EE0 /* SocketServer.h */,
+				E2524CFE255E60F400410EE0 /* SocketServer.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -469,6 +475,7 @@
 			files = (
 				E212BE0524A9B071003B8D5D /* ButtonGradientColor.m in Sources */,
 				DAF9BAA725010FE90050296F /* ImageCodeView.m in Sources */,
+				E2524D00255E60F400410EE0 /* SocketServer.m in Sources */,
 				E212BE0624A9B071003B8D5D /* UIView+LC.m in Sources */,
 				E212BE0924A9B071003B8D5D /* Hardware.m in Sources */,
 				E212BE0A24A9B071003B8D5D /* BaseViewController.m in Sources */,
@@ -502,6 +509,7 @@
 			files = (
 				E23BF2A5249B31E600533D46 /* ButtonGradientColor.m in Sources */,
 				DAF9BAA625010FE90050296F /* ImageCodeView.m in Sources */,
+				E2524CFF255E60F400410EE0 /* SocketServer.m in Sources */,
 				DA3519D4249A5534002F05A2 /* UIView+LC.m in Sources */,
 				E23BF29C249B303400533D46 /* Hardware.m in Sources */,
 				E24839FD2498CCFF00C0FAC3 /* BaseViewController.m in Sources */,
