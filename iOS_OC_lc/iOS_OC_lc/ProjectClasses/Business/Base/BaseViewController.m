@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = COLORWHITE;
+    self.view.backgroundColor = [UIColor lc_white];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {

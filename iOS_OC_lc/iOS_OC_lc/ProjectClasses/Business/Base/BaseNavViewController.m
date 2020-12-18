@@ -18,12 +18,12 @@
     [super viewDidLoad];
     
     // 导航栏背景色
-    self.navigationBar.barTintColor = COLORTINT;
+    self.navigationBar.barTintColor = [UIColor lc_tint];
     // 导航栏左右按钮字体颜色
-    self.navigationBar.tintColor = COLORWHITE;
+    self.navigationBar.tintColor = [UIColor lc_white];
     // 导航栏标题字体颜色
     [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
-                                                 NSForegroundColorAttributeName : COLORWHITE}];
+                                                 NSForegroundColorAttributeName : [UIColor lc_white]}];
 }
 
 @end

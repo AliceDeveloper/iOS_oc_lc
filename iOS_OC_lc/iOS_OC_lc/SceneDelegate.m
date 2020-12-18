@@ -22,7 +22,7 @@
         UIWindowScene *windowScene = (UIWindowScene *)scene;
         self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
         self.window.frame = windowScene.coordinateSpace.bounds;
-        self.window.backgroundColor = COLORWHITE;
+        self.window.backgroundColor = [UIColor lc_white];
         self.window.rootViewController = [[RootViewController alloc] init];
         [self.window makeKeyAndVisible];
     }

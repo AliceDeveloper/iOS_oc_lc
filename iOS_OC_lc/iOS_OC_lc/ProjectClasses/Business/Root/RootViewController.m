@@ -37,7 +37,7 @@
         CGFloat itemWidth = (width - layout.sectionInset.left - layout.sectionInset.right - space * (4 - 1)) / 4;
         layout.itemSize = CGSizeMake(itemWidth, itemWidth);
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:layout];
-        _collectionView.backgroundColor = COLORWHITE;
+        _collectionView.backgroundColor = [UIColor lc_white];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.showsVerticalScrollIndicator = NO;
@@ -59,7 +59,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"RootCell" forIndexPath:indexPath];
-    cell.backgroundColor = COLORTINT;
+    cell.backgroundColor = [UIColor lc_tint];
     
     return cell;
 }

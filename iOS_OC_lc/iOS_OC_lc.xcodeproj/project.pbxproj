@@ -59,6 +59,8 @@
 		E256BBC32553FD5C004D3D7B /* SocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E256BBC12553FD5C004D3D7B /* SocketEngine.m */; };
 		E265E12324FF690200ABEC00 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E265E12124FF690200ABEC00 /* BannerView.m */; };
 		E265E12424FF690200ABEC00 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E265E12124FF690200ABEC00 /* BannerView.m */; };
+		E289F08A258C8B6C00A2680B /* UIColor+LC.m in Sources */ = {isa = PBXBuildFile; fileRef = E289F089258C8B6C00A2680B /* UIColor+LC.m */; };
+		E289F08B258C8B6C00A2680B /* UIColor+LC.m in Sources */ = {isa = PBXBuildFile; fileRef = E289F089258C8B6C00A2680B /* UIColor+LC.m */; };
 		E2A30A7F24A32A6D0049993B /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A30A7B24A32A6D0049993B /* NetworkEngine.m */; };
 		E2BE923A24FE209500DF5DEC /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE923924FE209500DF5DEC /* BaseWebViewController.m */; };
 		E2BE923B24FE209500DF5DEC /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE923924FE209500DF5DEC /* BaseWebViewController.m */; };
@@ -124,6 +126,8 @@
 		E256BBC12553FD5C004D3D7B /* SocketEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketEngine.m; sourceTree = "<group>"; };
 		E265E12124FF690200ABEC00 /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
 		E265E12224FF690200ABEC00 /* BannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
+		E289F088258C8B6C00A2680B /* UIColor+LC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LC.h"; sourceTree = "<group>"; };
+		E289F089258C8B6C00A2680B /* UIColor+LC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LC.m"; sourceTree = "<group>"; };
 		E2A30A7B24A32A6D0049993B /* NetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
 		E2A30A7D24A32A6D0049993B /* NetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkEngine.h; sourceTree = "<group>"; };
 		E2BE923824FE209500DF5DEC /* BaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				DA3519D0249A54F2002F05A2 /* UIPasteboard+LC.m */,
 				DA3519D2249A5534002F05A2 /* UIView+LC.h */,
 				DA3519D3249A5534002F05A2 /* UIView+LC.m */,
+				E289F088258C8B6C00A2680B /* UIColor+LC.h */,
+				E289F089258C8B6C00A2680B /* UIColor+LC.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 				E256BBC32553FD5C004D3D7B /* SocketEngine.m in Sources */,
 				E2D18ED2251C732600D3627A /* QRScanVC.m in Sources */,
 				E2BE923B24FE209500DF5DEC /* BaseWebViewController.m in Sources */,
+				E289F08B258C8B6C00A2680B /* UIColor+LC.m in Sources */,
 				E2D18EDE251C73C900D3627A /* QRGenerate.m in Sources */,
 				E212BE0C24A9B071003B8D5D /* SingleVideo.m in Sources */,
 				E212BE0D24A9B071003B8D5D /* AppDelegate.m in Sources */,
@@ -517,6 +524,7 @@
 				E256BBC22553FD5C004D3D7B /* SocketEngine.m in Sources */,
 				E2D18ED1251C732600D3627A /* QRScanVC.m in Sources */,
 				E2BE923A24FE209500DF5DEC /* BaseWebViewController.m in Sources */,
+				E289F08A258C8B6C00A2680B /* UIColor+LC.m in Sources */,
 				E2D18EDD251C73C900D3627A /* QRGenerate.m in Sources */,
 				E23BF290249B2DCB00533D46 /* SingleVideo.m in Sources */,
 				E24839D12498BB1B00C0FAC3 /* AppDelegate.m in Sources */,

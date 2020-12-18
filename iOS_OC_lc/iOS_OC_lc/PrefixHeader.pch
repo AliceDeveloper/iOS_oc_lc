@@ -18,6 +18,7 @@
 #import "UIImage+LC.h"
 #import "UIPasteboard+LC.h"
 #import "UIView+LC.h"
+#import "UIColor+LC.h"
 #import "ButtonGradientColor.h"
 #import "ButtonUnderLine.h"
 #import "Hardware.h"
@@ -66,20 +67,20 @@
 #define TABBARHEIGHT    (49)
 #define BOTTOMHEIGHT    (STATUSBARHEIGHT >= 40 ? 34 : 0)
 
+// 黑暗模式
+#define LCDarkMode (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark)
+
 // 颜色宏
-#define COLORRGB(r, g, b)       [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:1]
 #define COLORRGBA(r, g, b, a)   [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:(a)]
+#define COLORRGB(r, g, b)       COLORRGBA(r, g, b, 1)
 #define COLORHEX(value)         COLORRGB(((float)((value & 0xFF0000) >> 16)), ((float)((value & 0xFF00) >> 8)), ((float)(value & 0xFF)))
 
-// 图片加载
-#define SMALLIMAGE(name)    [UIImage imageNamed:[NSString stringWithFormat:@"%@", name]]
-#define BIGIMAGE(name, ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:ext]]
+// 字号
+#define LCFont(s)       [UIFont systemFontOfSize:(s)]
+#define LCBoldFont(s)   [UIFont boldSystemFontOfSize:(s)]
 
-/********************  工程颜色  ********************/
-#define COLORCLEAR          [UIColor clearColor]    // 透明
-#define COLORTINT           COLORHEX(0xff0000)      // 主色调
-#define COLORPLACEHOLDER    COLORHEX(0xbfbfbf)      // 占位色
-#define COLORWHITE          COLORHEX(0xffffff)      // 白色
-#define COLORBLACK          COLORHEX(0x000000)      // 黑色
+// 图片加载
+#define IMAGE_SAMLL(name)    [UIImage imageNamed:[NSString stringWithFormat:@"%@", name]]
+#define IMAGE_BIG(name, ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:ext]]
 
 #endif /* PrefixHeader_pch */

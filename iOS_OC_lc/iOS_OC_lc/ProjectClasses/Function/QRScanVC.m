@@ -35,9 +35,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [COLORBLACK colorWithAlphaComponent:0.5];
+    self.view.backgroundColor = [[UIColor lc_black] colorWithAlphaComponent:0.5];
     self.scanView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-    self.scanView.backgroundColor = [COLORBLACK colorWithAlphaComponent:0];
+    self.scanView.backgroundColor = [[UIColor lc_black] colorWithAlphaComponent:0];
     [self.view addSubview:_scanView];
     [self scanWithRect:_scanView.frame];
 }

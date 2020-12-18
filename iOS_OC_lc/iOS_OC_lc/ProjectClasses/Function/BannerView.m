@@ -140,8 +140,8 @@
         _pageControl = [[UIPageControl alloc] init];
         _pageControl.currentPage = 0;
         _pageControl.numberOfPages = 0;
-        _pageControl.currentPageIndicatorTintColor = COLORTINT;
-        _pageControl.pageIndicatorTintColor = COLORPLACEHOLDER;
+        _pageControl.currentPageIndicatorTintColor = [UIColor lc_tint];
+        _pageControl.pageIndicatorTintColor = [UIColor lc_backgroundColor225];
         _pageControl.enabled = NO;
         [self addSubview:_pageControl];
     }
